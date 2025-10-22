@@ -1,0 +1,149 @@
+.hasil {
+    background: #3846e6;
+    overflow: hidden;
+}
+
+.pilih-template {
+    height: auto;
+    width: 100%;
+    margin-top: 5dvh;
+}
+.pilih-template h2 {
+    height: auto;
+    width: auto;
+    color: white;
+    text-align: center;
+    font-size: clamp(16px, 2.5dvh, 24px);
+}
+.pt-pilihan {
+    width: auto;
+    height: auto;
+    margin: 3dvh 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1dvh;
+}
+.confirm-btns {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 5%;
+}
+
+.ptp-baris {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100%;
+    padding: 0 3dvh;
+    gap: 1dvh;
+}
+.ptp-btn {
+    height: calc((100dvw - 1dvh*2 - 3dvh*2)/3);
+    width: calc((100dvw - 1dvh*2 - 3dvh*2)/3);
+    border-radius: 15px;
+    border: none;
+}
+.ptp-btn.pilihan {
+    border: 7.5px solid #39e9ff;
+    position: relative;
+}
+.ptp-btn.pilihan::after {
+    content: "\f00c"; /* kode ikon fa-check */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 1000;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #39e956;
+    color: #3846e6;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.proses {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ktk-animasi {
+    height: auto;
+    min-height: 85px;
+    min-width: 150px;
+    max-height: 145px;
+    max-width: 235px;
+    width: auto;
+    background: #1b00b9;
+    padding: 5dvh 8dvh;
+    color: #4d8fff;
+    margin-top: 15dvh;
+    margin-bottom: 3dvh;
+}
+.ktk-animasi h3 {
+    font-size: clamp(15px, 2.5dvh, 22px);
+    text-align: center;
+}
+
+.proses h2 {
+    width: auto;
+    height: auto;
+    text-align: center;
+    color: white;
+    font-size: clamp(21px, 3.4dvh, 32px);
+}
+
+.halaman-hasil {
+    display: none;
+}
+
+.confirm-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3dvh;
+}
+
+.foto-preview {
+    height: 50%;
+    margin-top: 5dvh;
+    display: flex;
+    align-items: center;
+    padding: 0 3dvh;
+}
+.foto-preview img {
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.qr {
+    width: clamp(75px, 10dvh, 96px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #9f00b9;
+    padding: 1dvh 0;
+    gap: 1dvh;
+}
+
+.qr img {
+    width: calc(100% - 20%);
+    height: auto;
+}
+
+.qr p {
+    height: auto;
+    font-size: clamp(8px, 1.05dvh, 10px);
+    text-align: center;
+    font-weight: 1000;
+    color: white;
+}

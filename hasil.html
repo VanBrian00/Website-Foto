@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil</title>
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="css/hasil.css?v=2">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  ="">
+</head>
+<body>
+    <div class="hasil">
+        <div class="h-logo">
+            <h2>Boothie</h2>
+        </div>
+
+        <div class="pilih-template" id="pt">
+            <h2>Choose Your Template</h2>
+            <div class="pt-pilihan">
+                <div class="ptp-baris">
+                    <button class="ptp-btn" id="ptpButton"></button>
+                    <button class="ptp-btn" id="ptpButton"></button>
+                    <button class="ptp-btn" id="ptpButton"></button>
+                </div>
+                <div class="ptp-baris">
+                    <button class="ptp-btn" id="ptpButton"></button>
+                    <button class="ptp-btn" id="ptpButton"></button>
+                    <button class="ptp-btn" id="ptpButton"></button>
+                </div>
+                <div class="ptp-baris">
+                    <button class="ptp-btn" id="ptpButton"></button>
+                    <button class="ptp-btn" id="ptpButton"></button>
+                    <button class="ptp-btn" id="ptpButton"></button>
+                </div>
+            </div>
+            <div class="confirm-btns">
+                <button id="btnOne" class="btn-primary">Next, Please</button>
+            </div>
+        </div>
+
+        <div class="proses" id="proses">
+            <div class="ktk-animasi">
+                <h3>Animasi<br>Loading</h3>
+            </div>
+
+            <h2>Hang on a Sec,<br>We are processing<br>Your Photo</h2>
+        </div>
+
+        <div class="halaman-hasil" id="halamanHasil">
+            <div class="foto-preview">
+                <img src="" id="hasilFoto" alt="Hasil Foto">
+            </div>
+
+            <div class="confirm-btns">
+                <button id="btnPrint" class="btn-primary">Print it Now</button>
+                
+                <div class="qr">
+                    <img src="asset/qr.png" alt="Qr">
+                    <p>SCAN & SHARE</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/hasil.js"></script>
+</body>
+</html>

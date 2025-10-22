@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamera</title>
+    <link rel="stylesheet" href="css/style.css?v=2">
+    <link rel="stylesheet" href="css/kamera.css?v=2.1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"  ="">
+</head>
+<body>
+    <div class="kamera">
+        <!--ini tampilan kameranya!-->
+        <video id="camera" autoplay playsinline></video>
+
+        <div class="hm-overlay" id="hmOverlay">
+            <p id="textReady">Ready?</p>
+            <h1 id="Angkahm">3</h1>
+        </div>
+
+        <div class="btn-foto">
+            <button id="foto">
+                <img src="asset/tombol-kamera.png" alt="tombol foto">
+            </button>
+        </div>
+
+        <div class="preview" id="containerPreview">
+            <canvas id="tampilanCanvas"></canvas>
+
+            <div class="confirm-btns">
+                <p>Use This Photo?</p>
+                <button id="btnOne" class="btn-primary">Yes, Please</button>
+                <button id="btnDua" class="btn-secondary">Naa, Retake</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/kamera.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+.home {
+    width: 100%;
+    height: 100%;
+    background: #3846e6;
+}
+
+.h-title {
+    height: auto;
+    width: 100%;
+    padding: 10dvh 0;
+}
+.h-title h1 {
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    height: auto;
+    width: auto;
+    font-size: clamp(25px, 3.4dvh, 32px);
+}
+
+/*tombol di halaman index*/
+
+.h-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5dvh;
+    margin-top: 5dvh;
+}
+
+.start {
+    position: relative;
+    background: none;
+    border: none;
+    cursor: pointer;
+    width: clamp(180px, 25dvh, 240px);
+    height: clamp(180px, 25dvh, 240px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.start img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.text-circle {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.text-circle p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 0;
+    height: 0;
+    animation: rotateText 12s linear infinite;
+}
+.text-circle span {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transform-origin: 0 100%;
+}
+
+@keyframes rotateText {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+:root {
+    --circle-radius: clamp(72px, 10dvh, 93px)
+}
+
+.h-powered {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1dvh;
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 5dvh;
+}
+.h-powered p {
+    text-align: center;
+    color: white;
+    font-size: 2dvh;
+    width: auto;
+    height: auto;
+}
+.h-powered img {
+    width: 7dvh;
+    height: auto;
+}
